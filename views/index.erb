@@ -5,7 +5,8 @@
 	</head>
 	<body>
 		<h1>Choose music for your moods!</h1>
-		<!-- enter button -->
+
+		<div class="form-wrapper">
 		<form action="/picksong" method="POST"> 
 
 		<% @moods_arr.each do |t| %>
@@ -13,5 +14,6 @@
 		<% end %>
 		<button type="submit" id="submit">submit</button>
 		</form>
+	</div>
 	</body>
 </html>

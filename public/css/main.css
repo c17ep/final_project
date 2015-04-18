@@ -4,6 +4,7 @@ h1 {
 	color: #1F135C;
 	font-family: 'Raleway', sans-serif;
 	font-size: 80px;
+	text-align: center;
 }
 
 .mood {
@@ -13,7 +14,13 @@ h1 {
 }
 
 #submit {
-	/*width: 10%;*/
-	/*height: 3em;*/
-	padding: 100px;
+	width: 10%;
+	height: 3em;
+	border-radius: 35px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 25px;
+}
+
+.form-wrapper {
+	margin-left: 35%;
 }
