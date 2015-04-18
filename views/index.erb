@@ -5,14 +5,17 @@
 	</head>
 	<body>
 		<h1>Choose music for your moods!</h1>
-		<!-- enter button -->
 
+
+		<div class="form-wrapper">
 		<form action="/picksong" method="POST">
+
 
 		<% @moods_arr.each do |t| %>
 			<input type="radio" name="mood" value="<%= t %>"> <span class="mood"><%= t %></span> <br>
 		<% end %>
-		<input type="submit">
+		<button type="submit" id="submit">submit</button>
 		</form>
+	</div>
 	</body>
 </html>
