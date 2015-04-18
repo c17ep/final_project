@@ -1,7 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:600);
+@import url(http://fonts.googleapis.com/css?family=Raleway:300);
 h1 {
-	color: green;
+	color: #1F135C;
+	font-family: 'Raleway', sans-serif;
 }
 
 .mood {
-	color: purple;
+	color: #5DA2E8;
+	font-family: 'Raleway', sans-serif;
 }
