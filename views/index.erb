@@ -1,12 +1,16 @@
 <!doctype HTML>
-<html>
+<html lang="en">
 	<head> </head>
 	<body>
 		<h1>Choose music for your moods!</h1>
 		<!-- checkbox mood list
 		enter button -->
-		<ul>
-			<li>mood[1]</li>
-		</ul>
+		
+		<% @moods_arr.each do |t| %>
+		
+		<%= t %> <br>
+		
+		<% end %>
+	
 	</body>
 </html>
