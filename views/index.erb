@@ -3,14 +3,13 @@
 	<head> </head>
 	<body>
 		<h1>Choose music for your moods!</h1>
-		<!-- checkbox mood list
-		enter button -->
-		
+		<!-- enter button -->
+		<form> 
+
 		<% @moods_arr.each do |t| %>
-		
-		<%= t %> <br>
-		
+			<input type="radio"> <%= t %> <br>
 		<% end %>
-	
+		<input type="submit">
+		</form>
 	</body>
 </html>
