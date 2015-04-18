@@ -3,9 +3,17 @@
 h1 {
 	color: #1F135C;
 	font-family: 'Raleway', sans-serif;
+	font-size: 80px;
 }
 
 .mood {
 	color: #5DA2E8;
 	font-family: 'Raleway', sans-serif;
+	font-size: 25px;
+}
+
+#submit {
+	/*width: 10%;*/
+	/*height: 3em;*/
+	padding: 100px;
 }
