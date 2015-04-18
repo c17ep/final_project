@@ -4,10 +4,10 @@
 	<body>
 		<h1>Choose music for your moods!</h1>
 		<!-- enter button -->
-		<form> 
+		<form action="/picksong" method="POST"> 
 
 		<% @moods_arr.each do |t| %>
-			<input type="radio"> <%= t %> <br>
+			<input type="radio" name="<%= t %>" value="<%= t %>"> <%= t %> <br>
 		<% end %>
 		<input type="submit">
 		</form>
