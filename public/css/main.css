@@ -1,5 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:600);
 @import url(http://fonts.googleapis.com/css?family=Raleway:300);
+
+body {
+	background-image: ../images/musical-notes.jpg;
+}
+
 h1 {
 	color: #1F135C;
 	font-family: 'Raleway', sans-serif;
