@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:300);
 
 body {
-	background-image: ../images/musical-notes.jpg;
+	background-image: "../images/musical-notes.jpg";
 }
 
 h1 {
