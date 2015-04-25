@@ -171,7 +171,7 @@ class MyApp < Sinatra::Base
     Song.new("Here Without You", "3 Doors Down", "Sorry/Apologetic", " "),
     Song.new("Fear", "Sarah McLachlan", "Sorry/Apologetic", " "),
     Song.new("I'm Sorry", "Flyleaf", "Sorry/Apologetic", " "),
-    Song.new("I Am", "Nine Days", "Sorry/Apologetic", " "),
+    Song.new("If I Am", "Nine Days", "Sorry/Apologetic", " "),
     Song.new("I'll Be There For You", "The Rembrandts", "Sorry/Apologetic", " "),
     Song.new("It's Not Over", "Secondhand Serenade", "Sorry/Apologetic", " "),
     Song.new("Realize", "Colbie Caillat", "Sorry/Apologetic", " "),
