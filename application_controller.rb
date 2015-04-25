@@ -15,7 +15,7 @@ class MyApp < Sinatra::Base
 
   post '/picksong' do
 
-      heartbreak_depressing = [
+      @heartbreak_depressing = [
     Song.new("Cry Me a River", "Justin Timerlake", "Heartbreak - Depressing", " "),
     Song.new("It Will Rain","Bruno Mars", "Heartbreak - Depressing", " "),
     Song.new("Somebody That I Used to Know", "Gotye feat. Kimbra", "Heartbreak - Depressing", " "),
@@ -34,7 +34,7 @@ class MyApp < Sinatra::Base
     Song.new("Make You Feel My Love", "Adele", "Heartbreak - Depressing", " "),
     Song.new("Say Something", "A Great Big World Feat. Christina Aguilera", "Heartbreak - Depressing", " ")]
 
-    heartbreak_feel_good = [
+    @heartbreak_feel_good = [
     Song.new("Heartbreak Song", "Kelly Clarkson", "Heartbreak - Feel Good", " "),
     Song.new("Irreplaceable", "Beyonce", "Heartbreak - Feel Good", " "),
     Song.new("F* You", "Cee-Lo Green", "Heartbreak - Feel Good", " "),
@@ -51,7 +51,7 @@ class MyApp < Sinatra::Base
     Song.new("Since You’ve Been Gone", "Kelly Clarkson", "Heartbreak - Feel Good", " "),
     Song.new("Where are you now", "Honor Society", "Heartbreak - Feel Good", " ")]
 
-    happy/feel_good = [
+    @happy_feel_good = [
     Song.new("Happy", "Pharrell Williams", "Happy/Feel Good", " "),
     Song.new("Best Day of My Life", "American Authors", "Happy/Feel Good", " "),
     Song.new("The Man", "Aloe Blacc", "Happy/Feel Good", " "),
@@ -64,14 +64,14 @@ class MyApp < Sinatra::Base
     Song.new("Pictures of you", "The Last Goodnight", "Happy/Feel Good", " "),
     Song.new("Beautiful Day", "U2", "Happy/Feel Good", " ") ]
 
-    frustrated = [ Song.new("Kyrptonite", "3 Doors Down", "Frustrated/Agitated", " "),
+    @frustrated = [ Song.new("Kyrptonite", "3 Doors Down", "Frustrated/Agitated", " "),
     Song.new("Rude", "MAGIC!", "Frustrated/Agitated", " "),
     Song.new("Best Day of My Life", "Authors", "Frustrated/Agitated", " "),
     Song.new("The Man", "Aloe Blacc", "Frustrated/Agitated", " "),
     Song.new("Walking On Sunshine", "Katrina and the Waves", "Frustrated/Agitated", " "),
     Song.new("Born This Way", "Lagy Gaga", "Frustrated/Agitated"," ") ]
 
-    abandoned = [ Song.new("Angels", "Robie Williams", "Abandoned", " "),
+    @abandoned = [ Song.new("Angels", "Robie Williams", "Abandoned", " "),
     Song.new("Apologize", "OneRepublic", "Abandoned", " "),
     Song.new("Time After Time", "Cyndi Lauper", "Abandoned", " "),
     Song.new("With or Without You", "U2", "Abandoned", " "),
@@ -84,7 +84,7 @@ class MyApp < Sinatra::Base
     Song.new("That Should be Me", "Justin Bieber", "Abandoned", " "),
     Song.new("Stairway to Heaven", "Led Zeppelin", "Abandoned", " ") ]
 
-    hyper = [ Song.new("I Got a Feeling", "Black Eyed Peas", "Hyper/Pumped", " "),
+    @hyper = [ Song.new("I Got a Feeling", "Black Eyed Peas", "Hyper/Pumped", " "),
     Song.new("LMFAO", "Party Rock Anthem", "Hyper/Pumped", " "),
     Song.new("Ain't It Fun", "Paramore", "Hyper/Pumped", " "),
     Song.new("Blurred Lines", "Robin Thicke", "Hyper/Pumped", " "),
@@ -96,7 +96,7 @@ class MyApp < Sinatra::Base
     Song.new("California Gurls", "Katy Perry", "Hyper/Pumped" " "),
     Song.new("Wake Me Up", "Avicii", "Hyper/Pumped", " ") ]
 
-    inspired = [ Song.new("Ain't No Mountain High Enough", "Marvin Gaye", "Inspired/Motivated", " "),
+    @inspired = [ Song.new("Ain't No Mountain High Enough", "Marvin Gaye", "Inspired/Motivated", " "),
     Song.new("On Top of the Word", "Imagine Dragons", "Inspired/Motivated", " "),
     Song.new("Don't Stop Believing", "Journey", "Inspired/Motivated", " "),
     Song.new("Animals", "Maroon 5", "Inspired/Motivated", " "),
@@ -116,7 +116,7 @@ class MyApp < Sinatra::Base
     Song.new("Titanium", "Sia", "Inspired/Motivated", " "),
     Song.new("Till the World Ends", "Britney Spears", "Inspired/Motivated", " ") ]
 
-    loving_yourself = [ Song.new("All About that Bass", "Meghan Trainor", "Loving yourself", " "),
+    @loving_yourself = [ Song.new("All About that Bass", "Meghan Trainor", "Loving yourself", " "),
     Song.new("Try", "Colbie Calliat", "Loving yourself", " "),
     Song.new("Who you are", "Jessie J", "Loving yourself", " "),
     Song.new("Beautiful", "Christina Agulara", "Loving yourself", " "),
@@ -125,7 +125,7 @@ class MyApp < Sinatra::Base
     Song.new("Gold", "Britt Nicole", "Loving yourself", " "),
     Song.new("Born This Way", "Lady Gaga", "Loving yourself", " ") ]
 
-    perserverance = [ Song.new("Soar", "Christina Aguilera", "Perseverance", " "),
+    @perserverance = [ Song.new("Soar", "Christina Aguilera", "Perseverance", " "),
     Song.new("Warrior", "Demi Lovato", "Perseverance", " "),
     Song.new("Stronger (What Doesn't Kill You", "Kelly Clarkson", "Perseverance", " "),
     Song.new("Unstoppable", "Rascall Flatts", "Perseverance", " "),
@@ -136,30 +136,30 @@ class MyApp < Sinatra::Base
     Song.new("Firework", "Katy Perry", "Perseverance", " "),
     Song.new("Brave", "Sara Barrelis", "Perseverance", " ") ]
 
-    aggressive = [ Song.new("House of the Rising Sun", "The Animals", "Aggressive", " "),
+    @aggressive = [ Song.new("House of the Rising Sun", "The Animals", "Aggressive", " "),
     Song.new("Animal", "Neon Trees", "Aggressive", " "),
     Song.new("Dangerous", "Big Data(feat. Joywave)", "Aggressive", " "),
     Song.new("Holiday (The Original Broadway Cast Recording feat. John Gallagher Jr., Stark Sands, Theo Stockman & Company)", "Green Day", "Aggreesive", " ") ]
 
-    anxious = [ Song.new("Unwritten", "Natasha Bendenfield", "Anxious", " "),
+    @anxious = [ Song.new("Unwritten", "Natasha Bendenfield", "Anxious", " "),
     Song.new("Make It Happen", "Mariah Carey", "Anxious", " "),
     Song.new("It's My Life", "Bon Jovi", "Anxious", " "),
     Song.new("Hit Me With Your Best Shot", "Pat Benatar", "Anxious", " "),
     Song.new("The Climb", "Miley Cyrus", "Anxious", " "),
     Song.new("Fighter", "Christina Aguilera", "Anxious", " ") ]
 
-    defeated = [ Song.new("The Funeral", "Band of Horses", "Defeated/Hopeless", " "),
+    @defeated = [ Song.new("The Funeral", "Band of Horses", "Defeated/Hopeless", " "),
     Song.new("How to Save a Life", "The Fray", "Defeated/Hopeless", " "),
     Song.new("Madness", "Muse", "Defeated/Hopeless", " "),
     Song.new("See You Again", "Wiz Khalifa", "Defeated/Hopeless", " ") ]
 
-    ashamed = [ Song.new("Unfaithful", "Rihanna", "Ashamed/Guilty", " "),
+    @ashamed = [ Song.new("Unfaithful", "Rihanna", "Ashamed/Guilty", " "),
     Song.new("I'm a loser", "The Beatles", "Ashamed/Guilty", " "),
     Song.new("Nobody's Perfect", "Madonna", " "),
     Song.new("If Mama Knew", "Leo Kottke", "Ashamed/Guilty", " "),
     Song.new("Nodoy's Fault But Mine", "Led Zeppelin", "Ashamed/Guilty", " ") ]
 
-    sorry = [ Song.new("Sorry", "Buckcherry", "Sorry/Apologetic", " "),
+    @sorry = [ Song.new("Sorry", "Buckcherry", "Sorry/Apologetic", " "),
     Song.new("All the Things She Said", "Tatu", "Sorry/Apologetic", " "),
     Song.new("Always On Your Side", "Sheryl Crow", "Sorry/Apologetic", " "),
     Song.new("Better Than Me", "Hinder", "Sorry/Apologetic", " "),
@@ -174,19 +174,19 @@ class MyApp < Sinatra::Base
     Song.new("Realize", "Colbie Caillat", "Sorry/Apologetic", " "),
     Song.new("Umbrella", "Rihanna and Marie Digby", "Sorry/Apologetic", " ") ]
 
-    angry = [ Song.new("I Hate Everything About You", "Three Days Grace", "Angry", " "),
+    @angry = [ Song.new("I Hate Everything About You", "Three Days Grace", "Angry", " "),
     Song.new("Platypus", "Green Day", "Angry", " "),
     Song.new("The Way I Am", "Eminem", "Angry", " "),
     Song.new("Breakin’ dishes", "Rihanna", "Angry", " "),
     Song.new("Gives You Hell", "The All-American Rejects", "Angry", " "),
     Song.new("Love Sosa", "Chief Keef", "Angry", " ") ]
 
-    conflicted = [ Song.new("Bohemian Rhapsody", "Queen", "Conflicted", " "),
+    @conflicted = [ Song.new("Bohemian Rhapsody", "Queen", "Conflicted", " "),
     Song.new("Habits (Stay High) [Hippie Sabotage Remix]", "To Love", "Conflicted", " "),
     Song.new("Fame", "David Bowie", "Conflicted", " "),
     Song.new("Holy Grail", "Jay Z", "Conflicted", " ") ]
 
-    sentimental = [ Song.new("All I Want", "Kodaline", "Sentimental", " "),
+    @sentimental = [ Song.new("All I Want", "Kodaline", "Sentimental", " "),
     Song.new("All of Me", "John Legend", "Sentimental", " "),
     Song.new("All This Time", "OneRepublic", "Sentimental," " "),
     Song.new("Arms", "Christina Perri", "Sentimental", " "),
@@ -197,7 +197,7 @@ class MyApp < Sinatra::Base
     Song.new("Soldier", "Gavin Degraw", "Sentimental", " "),
     Song.new("Life of the Party", "Shawn Mendes", "Sentimental", " ") ]
 
-    in_love = [ Song.new("Baby", "Justin Bieber", "In Love", " "),
+    @in_love = [ Song.new("Baby", "Justin Bieber", "In Love", " "),
     Song.new("Back For You", "One Direction", "In Love", " "),
     Song.new("Banga! Banga!", "Austin Mahone", "In Love", " "),
     Song.new("Best I Ever Had", "Gavin Degraw", "In Love", " "),
@@ -212,16 +212,16 @@ class MyApp < Sinatra::Base
     Song.new("Unconditionally", "Katy Perry", "In Love", " "),
     Song.new("Waiting for Superman", "Daughtry", "In Love", " ") ]
 
-    jealous = [ Song.new("Jealous", "Nick Jonas", "Jealous", " "),
+    @jealous = [ Song.new("Jealous", "Nick Jonas", "Jealous", " "),
     Song.new("Want You Back", "Cher/Demi Lavato", "Jealous", " "),
     Song.new("More Than This", "One Direction", "Jealous", " "),
     Song.new("True Colors", "Wiz Khalifa", "Jealous", " "),
     Song.new("When I was your Man", "Bruno Mars", "Jealous", " ") ]
 
-    impulsive = [ Song.new("Lose Yourself", "Eminem", "Impulsive", " "),
+    @impulsive = [ Song.new("Lose Yourself", "Eminem", "Impulsive", " "),
     Song.new("Free Bird", "Lynyrd Skynyrd", "Impulsive", " ") ]
 
-    sassy = [ Song.new("Fancy", "Iggy Azalea and Charli XCX", "Sassy", " "),
+    @sassy = [ Song.new("Fancy", "Iggy Azalea and Charli XCX", "Sassy", " "),
     Song.new("Bad Girls", "M.I.A.", "Sassy", " "),
     Song.new("Sleazy", "Kesha", "Sassy", " "),
     Song.new("Partition", "Beyoncé", "Sassy", " "),
@@ -230,7 +230,7 @@ class MyApp < Sinatra::Base
     Song.new("What I Like", "Charli XCX", " Sassy", " "),
     Song.new("SMS (Bangerz)", "Miley Cyrus ft. Britney Spears", "Sassy", " ") ]
 
-    victorious = [ Song.new("The Distance", "Cake", "Victorious", " "),
+    @victorious = [ Song.new("The Distance", "Cake", "Victorious", " "),
     Song.new("Eye of the Tiger", "Survivor", "Victorious", " "),
     Song.new("U Can't Touch This", "MC Hammer", "Victorious", " "),
     Song.new("Don't Stop Believing", "Journey", "Victorious", " "),
