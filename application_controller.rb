@@ -1,9 +1,9 @@
-require 'bundler'
+#require 'bundler'
 
-Bundler.require
+#Bundler.require
 
 require_relative "models/moods.rb"
-require_relative "models/songs.rb"
+require_relative "models/song.rb"
 class MyApp < Sinatra::Base
 
   get '/' do
@@ -18,7 +18,7 @@ class MyApp < Sinatra::Base
       heartbreak_depressing = [
     Song.new("Cry Me a River", "Justin Timerlake", "Heartbreak - Depressing", " "),
     Song.new("It Will Rain","Bruno Mars", "Heartbreak - Depressing", " "),
-    Song.new("Somebody That I Used to Know", "Gotye feat. Kimbra", "Heartbreak - Depressing," " "),
+    Song.new("Somebody That I Used to Know", "Gotye feat. Kimbra", "Heartbreak - Depressing", " "),
     Song.new("When You're Gone", "Avril Lavigne", "Heartbreak - Depressing", " "),
     Song.new("Here Without You", "3 Doors Down", "Depressing - Heartbreak", " "),
     Song.new("How Do I Live", "LeAnn Rimes", "Heartbreak - Depressing", " "),
@@ -59,7 +59,7 @@ class MyApp < Sinatra::Base
     Song.new("Walking on Sunshine", "Katrina and the Waves", "Happy/Feel Good", " "),
     Song.new("Born This Way", "Lady Gaga", "Happy/Feel Good", " "),
     Song.new("1985", "Bowling for Soup", "Happy/Feel Good", " "),
-    Song.new("Hotel California", "Eagles", "Happy/Feel Good", " ")
+    Song.new("Hotel California", "Eagles", "Happy/Feel Good", " "),
     Song.new("All About That Bass", "Meghan Trainor", "Happy/Feel Good", " "),
     Song.new("Pictures of you", "The Last Goodnight", "Happy/Feel Good", " "),
     Song.new("Beautiful Day", "U2", "Happy/Feel Good", " ") ]
