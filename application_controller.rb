@@ -15,7 +15,54 @@ class MyApp < Sinatra::Base
 
   post '/picksong' do
 
-      @heartbreak_depressing = [
+  	@mood = params["mood"]
+  	if @mood == "heartbreak-depressing"
+  		@songs = @heartbreak_depressing
+  	elsif @mood == "angry"
+  		@songs = @angry
+  	elsif @mood == "heartbreak-feel good"
+  		@songs = @heartbreak_feel_good
+  	elsif @mood == "happy"
+  		@songs = @happy_feel_good
+  	elsif @mood == "frustrated/agitated"
+  		@songs = @frustrated
+  	elsif @mood == "hyper/pumped"
+  		@songs = @hyper
+  	elsif @mood == "inspired/motivated"
+  		@songs = @inspired
+  	elsif @mood == "abandoned"
+  		@songs = @abandoned
+  	elsif @mood == "aggressive"
+  		@songs = @aggressive
+  	elsif @mood == "anxious"
+  		@songs = @anxious
+  	elsif @mood == "ashamed"
+  		@songs = @ashamed
+  	elsif @mood == "conflicted"
+  		@songs = @conflicted
+  	elsif @mood == "sentimental"
+  		@songs = @sentimental
+  	elsif @mood == "jealous"
+  		@songs = @jealous
+  	elsif @mood == "impulsive"
+  		@songs = @impulsive
+  	elsif @mood == "sassy"
+  		@songs = @sassy
+  	elsif @mood == "victorious"
+  		@songs = @victorious
+  	elsif @mood == "apologetic"
+  		@songs = @sorry
+  	elsif @mood == "in love"
+  		@songs = @in_love
+  	elsif @moods == "loving yourself"
+  		@songs = @loving_yourself
+  	elsif @moods == "perserverance"
+  		@songs = @perserverance
+  	elsif @moods == "defeated"
+  		@songs = @defeated
+  	end
+
+    @heartbreak_depressing = [
     Song.new("Cry Me a River", "Justin Timerlake", "Heartbreak - Depressing", " "),
     Song.new("It Will Rain","Bruno Mars", "Heartbreak - Depressing", " "),
     Song.new("Somebody That I Used to Know", "Gotye feat. Kimbra", "Heartbreak - Depressing", " "),
