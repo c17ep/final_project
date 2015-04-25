@@ -16,51 +16,7 @@ class MyApp < Sinatra::Base
   post '/picksong' do
 
   	@mood = params["mood"]
-  	if @mood == "heartbreak-depressing"
-  		@songs = @heartbreak_depressing
-  	elsif @mood == "angry"
-  		@songs = @angry
-  	elsif @mood == "heartbreak-feel good"
-  		@songs = @heartbreak_feel_good
-  	elsif @mood == "happy"
-  		@songs = @happy_feel_good
-  	elsif @mood == "frustrated/agitated"
-  		@songs = @frustrated
-  	elsif @mood == "hyper/pumped"
-  		@songs = @hyper
-  	elsif @mood == "inspired/motivated"
-  		@songs = @inspired
-  	elsif @mood == "abandoned"
-  		@songs = @abandoned
-  	elsif @mood == "aggressive"
-  		@songs = @aggressive
-  	elsif @mood == "anxious"
-  		@songs = @anxious
-  	elsif @mood == "ashamed"
-  		@songs = @ashamed
-  	elsif @mood == "conflicted"
-  		@songs = @conflicted
-  	elsif @mood == "sentimental"
-  		@songs = @sentimental
-  	elsif @mood == "jealous"
-  		@songs = @jealous
-  	elsif @mood == "impulsive"
-  		@songs = @impulsive
-  	elsif @mood == "sassy"
-  		@songs = @sassy
-  	elsif @mood == "victorious"
-  		@songs = @victorious
-  	elsif @mood == "apologetic"
-  		@songs = @sorry
-  	elsif @mood == "in love"
-  		@songs = @in_love
-  	elsif @moods == "loving yourself"
-  		@songs = @loving_yourself
-  	elsif @moods == "perserverance"
-  		@songs = @perserverance
-  	elsif @moods == "defeated"
-  		@songs = @defeated
-  	end
+
 
     @heartbreak_depressing = [
     Song.new("Cry Me a River", "Justin Timerlake", "Heartbreak - Depressing", " "),
@@ -76,7 +32,7 @@ class MyApp < Sinatra::Base
     Song.new("Because of You", "Kelly Clarkson", "Heartbreak - Depressing", " "),
     Song.new("Behind These Hazel Eyes", "Kelly Clarkson", "Heartbreak - Depressing", " "),
     Song.new("Ain't No Sunshine", "Bill Withers", "Heartbreak - Depressing", " "),
-    Song.new("Stay With Me", "Sam Smith", "Heartbreak - Depressing", " ").
+    Song.new("Stay With Me", "Sam Smith", "Heartbreak - Depressing", " "),
     Song.new("The Heart Wants What it Wants", "Selena Gomez", "Heartbreak - Depressing", " "),
     Song.new("Make You Feel My Love", "Adele", "Heartbreak - Depressing", " "),
     Song.new("Say Something", "A Great Big World Feat. Christina Aguilera", "Heartbreak - Depressing", " ")]
@@ -89,10 +45,10 @@ class MyApp < Sinatra::Base
     Song.new("Single Ladies", "Beyonce", "Heartbreak - Feel Good", " "),
     Song.new("We are never getting back together", "Taylor Swift", "Heartbreak - Feel Good", " "),
     Song.new("Stronger (What Doesn’t Kill You)", "Kelly Clarkson", "Heartbreak - Feel Good", " "),
-    Song.new("Best Thing I never Had," "Beyonce", "Heartbreak - Feel Good", " "),
+    Song.new("Best Thing I never Had", "Beyonce", "Heartbreak - Feel Good", " "),
     Song.new("Problem", "Ariana Grande", "Heartbreak - Feel Good", " "),
     Song.new("My Life Would Suck Without You", "Kelly Clarkson", "Heartbreak - Feel Good", " "),
-    Song.new("The one that got away", "Kelly Clarkson," "Heartbreak - Feel Good", " "),
+    Song.new("The one that got away", "Kelly Clarkson", "Heartbreak - Feel Good", " "),
     Song.new("Over You", "Daughtry", "Heartbreak - Feel Good", " "),
     Song.new("Clarity", "Zedd/feat.Foxes", "Heartbreak - Feel Good", " "),
     Song.new("Since You’ve Been Gone", "Kelly Clarkson", "Heartbreak - Feel Good", " "),
@@ -140,7 +96,7 @@ class MyApp < Sinatra::Base
     Song.new("Time Of Our Lives", "Neyo/Pitbull", "Hyper/Pumped", " "),
     Song.new("I Wanna Dance With Somebody", "Whitney Houston", "Hyper/Pumped", " "),
     Song.new("Talk Dirty To Me", "Jason Derulo", "Hyper/Pumped", " "),
-    Song.new("California Gurls", "Katy Perry", "Hyper/Pumped" " "),
+    Song.new("California Gurls", "Katy Perry", "Hyper/Pumped", " "),
     Song.new("Wake Me Up", "Avicii", "Hyper/Pumped", " ") ]
 
     @inspired = [ Song.new("Ain't No Mountain High Enough", "Marvin Gaye", "Inspired/Motivated", " "),
@@ -202,7 +158,7 @@ class MyApp < Sinatra::Base
 
     @ashamed = [ Song.new("Unfaithful", "Rihanna", "Ashamed/Guilty", " "),
     Song.new("I'm a loser", "The Beatles", "Ashamed/Guilty", " "),
-    Song.new("Nobody's Perfect", "Madonna", " "),
+    Song.new("Nobody's Perfect", "Madonna", "Ashamed/Guilty", " "),
     Song.new("If Mama Knew", "Leo Kottke", "Ashamed/Guilty", " "),
     Song.new("Nodoy's Fault But Mine", "Led Zeppelin", "Ashamed/Guilty", " ") ]
 
@@ -235,7 +191,7 @@ class MyApp < Sinatra::Base
 
     @sentimental = [ Song.new("All I Want", "Kodaline", "Sentimental", " "),
     Song.new("All of Me", "John Legend", "Sentimental", " "),
-    Song.new("All This Time", "OneRepublic", "Sentimental," " "),
+    Song.new("All This Time", "OneRepublic", "Sentimental", " "),
     Song.new("Arms", "Christina Perri", "Sentimental", " "),
     Song.new("Good Riddance (Time Of Your Life)", "Green Day", "Sentimental", " "),
     Song.new("Thinking Out Loud", "Ed Sheeran", "Sentimental", " "),
@@ -285,6 +241,52 @@ class MyApp < Sinatra::Base
     Song.new("Lose Yourself", "Eminem", "Victorious", " "),
     Song.new("Nothing's Gonna Stop us Now", "Starship", "Victorious", " "),
     Song.new("Stronger", "Kayne West", "Victorious", " ") ]
+
+    if @mood == "heartbreak-depressing"
+  		@songs = @heartbreak_depressing
+  	elsif @mood == "angry"
+  		@songs = @angry
+  	elsif @mood == "heartbreak-feel good"
+  		@songs = @heartbreak_feel_good
+  	elsif @mood == "happy"
+  		@songs = @happy_feel_good
+  	elsif @mood == "frustrated/agitated"
+  		@songs = @frustrated
+  	elsif @mood == "hyper/pumped"
+  		@songs = @hyper
+  	elsif @mood == "inspired/motivated"
+  		@songs = @inspired
+  	elsif @mood == "abandoned"
+  		@songs = @abandoned
+  	elsif @mood == "aggressive"
+  		@songs = @aggressive
+  	elsif @mood == "anxious"
+  		@songs = @anxious
+  	elsif @mood == "ashamed"
+  		@songs = @ashamed
+  	elsif @mood == "conflicted"
+  		@songs = @conflicted
+  	elsif @mood == "sentimental"
+  		@songs = @sentimental
+  	elsif @mood == "jealous"
+  		@songs = @jealous
+  	elsif @mood == "impulsive"
+  		@songs = @impulsive
+  	elsif @mood == "sassy"
+  		@songs = @sassy
+  	elsif @mood == "victorious"
+  		@songs = @victorious
+  	elsif @mood == "apologetic"
+  		@songs = @sorry
+  	elsif @mood == "in love"
+  		@songs = @in_love
+  	elsif @moods == "loving yourself"
+  		@songs = @loving_yourself
+  	elsif @moods == "perserverance"
+  		@songs = @perserverance
+  	elsif @moods == "defeated"
+  		@songs = @defeated
+  	end
 
     erb :videos
   end

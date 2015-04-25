@@ -6,7 +6,7 @@
 	<body>
 		<h1>Choose music for your moods!</h1>
 
-		<% song = @songs[random(@songs.length - 1)] %>
+		<% song = @songs[rand(@songs.size - 1)] %>
 
 		<video controls>
 			<source src= "<% song.youtube_link %>" >
