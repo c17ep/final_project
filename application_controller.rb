@@ -236,9 +236,67 @@ class MyApp < Sinatra::Base
     Song.new("Good Riddance (Time Of Your Life)", "Green Day", "Sentimental", " ")
     Song.new("Thinking Out Loud", "Ed Sheeran", "Sentimental", " ")
     Song.new("A Thousand Years", "Christina Perri", "Sentimental", " ")
-    
+    Song.new("The Only Exception", "Paramore", "Sentimental", " ")
+    Song.new("Soldier", "Gavin Degraw", "Sentimental", " ")
+    Song.new("Life of the Party", "Shawn Mendes", "Sentimental", " ")
+
+  end
+
+  post '/picksong' do
+    Song.new("Baby", "Justin Bieber", "In Love", " ")
+    Song.new("Back For You", "One Direction", "In Love", " ")
+    Song.new("Banga! Banga!", "Austin Mahone", "In Love", " ")
+    Song.new("Best I Ever Had", "Gavin Degraw", "In Love", " ")
+    Song.new("C'mon C'mon", "Ome Direction", "In Lover", " ")
+    Song.new("Love Me Harder", "Ariana Grande", "In Love", " ")
+    Song.new("Love Me like You Do", "Ellie Goulding", "In Love", " ")
+    Song.new("Love Somebody", "Maroon 5", "In Love", " ")
+    Song.new("She Looks so Perfect", "5 Seconds of Summer", "In Love", " ")
+    Song.new("Steal My Girl", "One Direction", "In Love", " ")
+    Song.new("Story of My Life", "One Direction", "In Love", " ")
+    Song.new("Style", "Taylor Swift", "In Love", " ")
+    Song.new("Unconditionally", "Katy Perry", "In Love", " ")
+    Song.new("Waiting for Superman", "Daughtry", "In Love", " ")
+
+  end
+
+  post '/picksong' do
+    Song.new("Jealous", "Nick Jonas", "Jealous", " ")
+    Song.new("Want You Back", "Cher/Demi Lavato", "Jealous", " ")
+    Song.new("More Than This", "One Direction", "Jealous", " ")
+    Song.new("True Colors", "Wiz Khalifa", "Jealous", " ")
+    Song.new("When I was your Man", "Bruno Mars", "Jealous", " ")
+
+  end
+
+  post '/picksong' do
+    Song.new("Lose Yourself", "Eminem", "Impulsive", " ")
+    Song.new("Free Bird", "Lynyrd Skynyrd", "Impulsive", " ")
+
+  end
+
+  post '/picksong' do
+    Song.new("Fancy", "Iggy Azalea and Charli XCX", "Sassy", " ")
+    Song.new("Bad Girls", "M.I.A.", "Sassy", " ")
+    Song.new("Sleazy", "Kesha", "Sassy", " ")
+    Song.new("Partition", "Beyoncé", "Sassy", " ")
+    Song.new("Million Dollar Bills", "Lorde", "Sassy", " ")
+    Song.new("How to Be a Heartbreaker", "Marina & the Diamonds", "Sassy", " ")
+    Song.new("What I Like", "Charli XCX", " Sassy", " ")
+    Song.new("SMS (Bangerz)", "Miley Cyrus ft. Britney Spears", "Sassy", " ")
   
   end
 
+  post '/picksong' do
+    Song.new("The Distance", "Cake", "Victorious", " ")
+    Song.new("Eye of the Tiger", "Survivor", "Victorious", " ")
+    Song.new("U Can't Touch This", "MC Hammer", "Victorious", " ")
+    Song.new("Don't Stop Believing", "Journey", "Victorious", " ")
+    Song.new("We are the Champions", "Queen", "Victorious", " ")
+    Song.new("Lose Yourself", "Eminem", "Victorious", " ")
+    Song.new("Nothing's Gonna Stop us Now", "Starship", "Victorious", " ")
+    Song.new("Stronger", "Kayne West", "Victorious", " ")
+
+  end
 
 end
