@@ -144,7 +144,7 @@ class MyApp < Sinatra::Base
     Song.new("Dangerous", "Big Data(feat. Joywave)", "Aggressive", " "),
     Song.new("Holiday (The Original Broadway Cast Recording feat. John Gallagher Jr., Stark Sands, Theo Stockman & Company)", "Green Day", "Aggreesive", " ") ]
 
-    @anxious = [ Song.new("Unwritten", "Natasha Bendenfield", "Anxious", " "),
+    @anxious = [ Song.new("Unwritten", "Natasha Bendinfield", "Anxious", " "),
     Song.new("Make It Happen", "Mariah Carey", "Anxious", " "),
     Song.new("It's My Life", "Bon Jovi", "Anxious", " "),
     Song.new("Hit Me With Your Best Shot", "Pat Benatar", "Anxious", " "),
