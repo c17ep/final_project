@@ -1,6 +1,6 @@
-#require 'bundler'
+require 'bundler'
 
-#Bundler.require
+Bundler.require
 
 require_relative "models/moods.rb"
 require_relative "models/song.rb"
