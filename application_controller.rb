@@ -13,9 +13,9 @@ class MyApp < Sinatra::Base
   end
 
   post '/picksong' do
-    Song.new("Cry Me a River", "Justin Timerlake", "Heartbreak - Depressing", " ")
+    song1 = Song.new("Cry Me a River", "Justin Timerlake", "Heartbreak - Depressing", " ")
     Song.new("It Will Rain","Bruno Mars", "Heartbreak - Depressing", " ")
-    Song.new("Somebody That I Used to Know", "Gotye feat. Kimbra", "Heartbreak - Depressing," " ") 
+    Song.new("Somebody That I Used to Know", "Gotye feat. Kimbra", "Heartbreak - Depressing," " ")
     Song.new("When You're Gone", "Avril Lavigne", "Heartbreak - Depressing", " ")
     Song.new("Here Without You", "3 Doors Down", "Depressing - Heartbreak", " ")
     Song.new("How Do I Live", "LeAnn Rimes", "Heartbreak - Depressing", " ")
@@ -29,11 +29,8 @@ class MyApp < Sinatra::Base
     Song.new("Stay With Me", "Sam Smith", "Heartbreak - Depressing", " ")
     Song.new("The Heart Wants What it Wants", "Selena Gomez", "Heartbreak - Depressing", " ")
     Song.new("Make You Feel My Love", "Adele", "Heartbreak - Depressing", " ")
-    Song.new("Say Something", "A Great Big World Feat. Christina Aguilera", "Heartbreak - Depressing", " ")  
-  
-  end
+    Song.new("Say Something", "A Great Big World Feat. Christina Aguilera", "Heartbreak - Depressing", " ")
 
-  post '/picksong' do
     Song.new("Heartbreak Song", "Kelly Clarkson", "Heartbreak - Feel Good", " ")
     Song.new("Irreplaceable", "Beyonce", "Heartbreak - Feel Good", " ")
     Song.new("F* You", "Cee-Lo Green", "Heartbreak - Feel Good", " ")
@@ -50,9 +47,6 @@ class MyApp < Sinatra::Base
     Song.new("Since You’ve Been Gone", "Kelly Clarkson", "Heartbreak - Feel Good", " ")
     Song.new("Where are you now", "Honor Society", "Heartbreak - Feel Good", " ")
 
-  end
-
-  post '/picksong' do
     Song.new("Happy", "Pharrell Williams", "Happy/Feel Good", " ")
     Song.new("Best Day of My Life", "American Authors", "Happy/Feel Good", " ")
     Song.new("The Man", "Aloe Blacc", "Happy/Feel Good", " ")
@@ -64,20 +58,14 @@ class MyApp < Sinatra::Base
     Song.new("All About That Bass", "Meghan Trainor", "Happy/Feel Good", " ")
     Song.new("Pictures of you", "The Last Goodnight", "Happy/Feel Good", " ")
     Song.new("Beautiful Day", "U2", "Happy/Feel Good", " ")
-  
-  end
 
-  post '/picksong' do
     Song.new("Kyrptonite", "3 Doors Down", "Frustrated/Agitated", " ")
     Song.new("Rude", "MAGIC!", "Frustrated/Agitated", " ")
     Song.new("Best Day of My Life", "Authors", "Frustrated/Agitated", " ")
     Song.new("The Man", "Aloe Blacc", "Frustrated/Agitated", " ")
     Song.new("Walking On Sunshine", "Katrina and the Waves", "Frustrated/Agitated", " ")
-    Song.new("Born This Way", "Lagy Gaga", "Frustrated/Agitated"," ") 
-  
-  end
+    Song.new("Born This Way", "Lagy Gaga", "Frustrated/Agitated"," ")
 
-  post '/picksong' do
     Song.new("Angels", "Robie Williams", "Abandoned", " ")
     Song.new("Apologize", "OneRepublic", "Abandoned", " ")
     Song.new("Time After Time", "Cyndi Lauper", "Abandoned", " ")
@@ -89,11 +77,8 @@ class MyApp < Sinatra::Base
     Song.new("I'm not the Only One", "Sam Smith", "Abandoned", " ")
     Song.new("Hotel Ceiling", "Rixton", "Abandoned", " ")
     Song.new("That Should be Me", "Justin Bieber", "Abandoned", " ")
-    Song.new("Stairway to Heaven", "Led Zeppelin", "Abandoned", " ") 
-  
-  end
+    Song.new("Stairway to Heaven", "Led Zeppelin", "Abandoned", " ")
 
-  post '/picksong' do
     Song.new("I Got a Feeling", "Black Eyed Peas", "Hyper/Pumped", " ")
     Song.new("LMFAO", "Party Rock Anthem", "Hyper/Pumped", " ")
     Song.new("Ain't It Fun", "Paramore", "Hyper/Pumped", " ")
@@ -105,10 +90,7 @@ class MyApp < Sinatra::Base
     Song.new("Talk Dirty To Me", "Jason Derulo", "Hyper/Pumped", " ")
     Song.new("California Gurls", "Katy Perry", "Hyper/Pumped" " ")
     Song.new("Wake Me Up", "Avicii", "Hyper/Pumped", " ")
-  
-  end
 
-  post '/picksong' do
     Song.new("Ain't No Mountain High Enough", "Marvin Gaye", "Inspired/Motivated", " ")
     Song.new("On Top of the Word", "Imagine Dragons", "Inspired/Motivated", " ")
     Song.new("Don't Stop Believing", "Journey", "Inspired/Motivated", " ")
@@ -128,10 +110,7 @@ class MyApp < Sinatra::Base
     Song.new("Team", "Lorde", "Inspired/Motivated", " ")
     Song.new("Titanium", "Sia", "Inspired/Motivated", " ")
     Song.new("Till the World Ends", "Britney Spears", "Inspired/Motivated", " ")
-  
-  end
 
-  post "/picksong" do
     Song.new("All About that Bass", "Meghan Trainor", "Loving yourself", " ")
     Song.new("Try", "Colbie Calliat", "Loving yourself", " ")
     Song.new("Who you are", "Jessie J", "Loving yourself", " ")
@@ -140,10 +119,7 @@ class MyApp < Sinatra::Base
     Song.new("Drops of Jupiter", "Train", "Loving yourself", " ")
     Song.new("Gold", "Britt Nicole", "Loving yourself", " ")
     Song.new("Born This Way", "Lady Gaga", "Loving yourself", " ")
-  
-  end
 
-  post "/picksong" do
     Song.new("Soar", "Christina Aguilera", "Perseverance", " ")
     Song.new("Warrior", "Demi Lovato", "Perseverance", " ")
     Song.new("Stronger (What Doesn't Kill You", "Kelly Clarkson", "Perseverance", " ")
@@ -154,45 +130,30 @@ class MyApp < Sinatra::Base
     Song.new("Jesus Take the Wheel", "Carrie Underwood", "Perseverance", " ")
     Song.new("Firework", "Katy Perry", "Perseverance", " ")
     Song.new("Brave", "Sara Barrelis", "Perseverance", " ")
-  
-  end
 
-  post "/picksong" do
     Song.new("House of the Rising Sun", "The Animals", "Agressive", " ")
     Song.new("Animal", "Neon Trees", "Agressive", " ")
     Song.new("Dangerous", "Big Data(feat. Joywave)", "Agressive", " ")
     Song.new("Holiday (The Original Broadway Cast Recording feat. John Gallagher Jr., Stark Sands, Theo Stockman & Company)", "Green Day", "Agreesive", " ")
-  
-  end
 
-  post "/picksong" do
     Song.new("Unwritten", "Natasha Bendenfield", "Anxious", " ")
     Song.new("Make It Happen", "Mariah Carey", "Anxious", " ")
     Song.new("It's My Life", "Bon Jovi", "Anxious", " ")
     Song.new("Hit Me With Your Best Shot", "Pat Benatar", "Anxious", " ")
     Song.new("The Climb", "Miley Cyrus", "Anxious", " ")
     Song.new("Fighter", "Christina Aguilera", "Anxious", " ")
-  
-  end
 
-  post "/picksong" do
     Song.new("The Funeral", "Band of Horses", "Defeated/Hopeless", " ")
     Song.new("How to Save a Life", "The Fray", "Defeated/Hopeless", " ")
     Song.new("Madness", "Muse", "Defeated/Hopeless", " ")
     Song.new("See You Again", "Wiz Khalifa", "Defeated/Hopeless", " ")
- 
-  end
 
-  post '/picksong' do
     Song.new("Unfaithful", "Rihanna", "Ashamed/Guilty", " ")
     Song.new("I'm a loser", "The Beatles", "Ashamed/Guilty", " ")
     Song.new("Nobody's Perfect", "Madonna", " ")
     Song.new("If Mama Knew", "Leo Kottke", "Ashamed/Guilty", " ")
     Song.new("Nodoy's Fault But Mine", "Led Zeppelin", "Ashamed/Guilty", " ")
-  
-  end
 
-  post '/picksong' do
     Song.new("Sorry", "Buckcherry", "Sorry/Apologetic", " ")
     Song.new("All the Things She Said", "Tatu", "Sorry/Apologetic", " ")
     Song.new("Always On Your Side", "Sheryl Crow", "Sorry/Apologetic", " ")
@@ -207,28 +168,19 @@ class MyApp < Sinatra::Base
     Song.new("It's Not Over", "Secondhand Serenade", "Sorry/Apologetic", " ")
     Song.new("Realize", "Colbie Caillat", "Sorry/Apologetic", " ")
     Song.new("Umbrella", "Rihanna and Marie Digby", "Sorry/Apologetic", " ")
-  
-  end
 
-  post '/picksong' do
     Song.new("I Hate Everything About You", "Three Days Grace", "Angry", " ")
     Song.new("Platypus", "Green Day", "Angry", " ")
     Song.new("The Way I Am", "Eminem", "Angry", " ")
     Song.new("Breakin’ dishes", "Rihanna", "Angry", " ")
     Song.new("Gives You Hell", "The All-American Rejects", "Angry", " ")
-    Song.new("Love Sosa", "Chief Keef", "Angry", " ") 
-  
-  end
+    Song.new("Love Sosa", "Chief Keef", "Angry", " ")
 
-  post '/picksong' do
     Song.new("Bohemian Rhapsody", "Queen", "Conflicted", " ")
     Song.new("Habits (Stay High) [Hippie Sabotage Remix]", "To Love", "Conflicted", " ")
     Song.new("Fame", "David Bowie", "Conflicted", " ")
     Song.new("Holy Grail", "Jay Z", "Conflicted", " ")
-  
-  end 
 
-  post '/picksong' do
     Song.new("All I Want", "Kodaline", "Sentimental", " ")
     Song.new("All of Me", "John Legend", "Sentimental", " ")
     Song.new("All This Time", "OneRepublic", "Sentimental," " ")
@@ -240,9 +192,6 @@ class MyApp < Sinatra::Base
     Song.new("Soldier", "Gavin Degraw", "Sentimental", " ")
     Song.new("Life of the Party", "Shawn Mendes", "Sentimental", " ")
 
-  end
-
-  post '/picksong' do
     Song.new("Baby", "Justin Bieber", "In Love", " ")
     Song.new("Back For You", "One Direction", "In Love", " ")
     Song.new("Banga! Banga!", "Austin Mahone", "In Love", " ")
@@ -258,24 +207,15 @@ class MyApp < Sinatra::Base
     Song.new("Unconditionally", "Katy Perry", "In Love", " ")
     Song.new("Waiting for Superman", "Daughtry", "In Love", " ")
 
-  end
-
-  post '/picksong' do
     Song.new("Jealous", "Nick Jonas", "Jealous", " ")
     Song.new("Want You Back", "Cher/Demi Lavato", "Jealous", " ")
     Song.new("More Than This", "One Direction", "Jealous", " ")
     Song.new("True Colors", "Wiz Khalifa", "Jealous", " ")
     Song.new("When I was your Man", "Bruno Mars", "Jealous", " ")
 
-  end
-
-  post '/picksong' do
     Song.new("Lose Yourself", "Eminem", "Impulsive", " ")
     Song.new("Free Bird", "Lynyrd Skynyrd", "Impulsive", " ")
 
-  end
-
-  post '/picksong' do
     Song.new("Fancy", "Iggy Azalea and Charli XCX", "Sassy", " ")
     Song.new("Bad Girls", "M.I.A.", "Sassy", " ")
     Song.new("Sleazy", "Kesha", "Sassy", " ")
@@ -284,10 +224,7 @@ class MyApp < Sinatra::Base
     Song.new("How to Be a Heartbreaker", "Marina & the Diamonds", "Sassy", " ")
     Song.new("What I Like", "Charli XCX", " Sassy", " ")
     Song.new("SMS (Bangerz)", "Miley Cyrus ft. Britney Spears", "Sassy", " ")
-  
-  end
 
-  post '/picksong' do
     Song.new("The Distance", "Cake", "Victorious", " ")
     Song.new("Eye of the Tiger", "Survivor", "Victorious", " ")
     Song.new("U Can't Touch This", "MC Hammer", "Victorious", " ")
@@ -297,6 +234,7 @@ class MyApp < Sinatra::Base
     Song.new("Nothing's Gonna Stop us Now", "Starship", "Victorious", " ")
     Song.new("Stronger", "Kayne West", "Victorious", " ")
 
+    erb :videos
   end
 
 end

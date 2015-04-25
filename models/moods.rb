@@ -5,7 +5,7 @@ class Moods
 	def initialize
 
 
-		@moods = ["angry", "depressed", "heartbreak-depressing", "heartbreak-feel good", "happy", "frustrated/agitated", "hyper/pumped", "inspired/motivated", "empathetic", "abandoned", "aggressive", "anxious", "ashamed", "compassionate", "conflicted", "defensive", "enraged", "sentimental", "jealous", "impulsive", "sassy", "victorious", "perky", "repulsive", "apologetic", "in love"]
+		@moods = ["angry", "depressed", "heartbreak-depressing", "heartbreak-feel good", "happy", "frustrated/agitated", "hyper/pumped", "inspired/motivated", "abandoned", "aggressive", "anxious", "ashamed", "conflicted", "defensive", "sentimental", "jealous", "impulsive", "sassy", "victorious", "apologetic", "in love"]
 
 	end
 end
