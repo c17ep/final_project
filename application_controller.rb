@@ -3,6 +3,7 @@ require 'bundler'
 Bundler.require
 
 require_relative "models/moods.rb"
+require_relative "models/songs.rb"
 class MyApp < Sinatra::Base
 
   get '/' do
@@ -50,7 +51,7 @@ class MyApp < Sinatra::Base
     Song.new("Since You’ve Been Gone", "Kelly Clarkson", "Heartbreak - Feel Good", " "),
     Song.new("Where are you now", "Honor Society", "Heartbreak - Feel Good", " ")]
 
-    happy/feel_good = [   
+    happy/feel_good = [
     Song.new("Happy", "Pharrell Williams", "Happy/Feel Good", " "),
     Song.new("Best Day of My Life", "American Authors", "Happy/Feel Good", " "),
     Song.new("The Man", "Aloe Blacc", "Happy/Feel Good", " "),
