@@ -1,6 +1,6 @@
-#require 'bundler'
+require 'bundler'
 
-#Bundler.require
+Bundler.require
 
 require_relative "models/moods.rb"
 require_relative "models/song.rb"
@@ -95,7 +95,7 @@ class MyApp < Sinatra::Base
     Song.new("The Real Slim Shady", "Eminem", "Hyper/Pumped", " "),
     Song.new("Time Of Our Lives", "Neyo/Pitbull", "Hyper/Pumped", " "),
     Song.new("I Wanna Dance With Somebody", "Whitney Houston", "Hyper/Pumped", " "),
-    Song.new("Talk Dirty To Me", "Jason Derulo", "Hyper/Pumped", " "),
+    Song.new("Talk Dirty", "Jason Derulo", "Hyper/Pumped", " "),
     Song.new("California Gurls", "Katy Perry", "Hyper/Pumped", " "),
     Song.new("Wake Me Up", "Avicii", "Hyper/Pumped", " ") ]
 
