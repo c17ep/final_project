@@ -73,7 +73,7 @@ class MyApp < Sinatra::Base
     Song.new("Walking On Sunshine", "Katrina and the Waves", "Frustrated/Agitated", "https://www.youtube.com/embed/iPUmE-tne5U"),
     Song.new("Born This Way", "Lagy Gaga", "Frustrated/Agitated","https://www.youtube.com/embed/wV1FrqwZyKw") ]
 
-    @abandoned = [ Song.new("Angels", "Robie Williams", "Abandoned", "https://www.youtube.com/embed/7LN-mg_5GGM"),
+    @abandoned = [ Song.new("Angels", "Robbie Williams", "Abandoned", "https://www.youtube.com/embed/7LN-mg_5GGM"),
     Song.new("Apologize", "OneRepublic", "Abandoned", "https://www.youtube.com/embed/ZSM3w1v-A_Y"),
     Song.new("Time After Time", "Cyndi Lauper", "Abandoned", "https://www.youtube.com/embed/VdQY7BusJNU"),
     Song.new("With or Without You", "U2", "Abandoned", "https://www.youtube.com/embed/XmSdTa9kaiQ"),
@@ -197,24 +197,24 @@ class MyApp < Sinatra::Base
 
     @in_love = [ Song.new("Baby", "Justin Bieber", "In Love", "https://www.youtube.com/embed/kffacxfA7G4"),
     Song.new("Back For You", "One Direction", "In Love", "https://www.youtube.com/embed/j5oIz-8gDvs"),
-    Song.new("Banga! Banga!", "Austin Mahone", "In Love", " "),
-    Song.new("Best I Ever Had", "Gavin Degraw", "In Love", " "),
-    Song.new("C'mon C'mon", "Ome Direction", "In Lover", " "),
-    Song.new("Love Me Harder", "Ariana Grande", "In Love", " "),
-    Song.new("Love Me like You Do", "Ellie Goulding", "In Love", " "),
+    Song.new("Banga! Banga!", "Austin Mahone", "In Love", "https://www.youtube.com/watch?v=Xovw9Qpl_jE"),
+    Song.new("Best I Ever Had", "Gavin Degraw", "In Love", "https://www.youtube.com/watch?v=NL2VBU604Jw"),
+    Song.new("C'mon C'mon", "Ome Direction", "In Lover", "https://www.youtube.com/watch?v=ZqQrN-XbzJA"),
+    Song.new("Love Me Harder", "Ariana Grande", "In Love", "https://www.youtube.com/watch?v=g5qU7p7yOY8"),
+    Song.new("Love Me like You Do", "Ellie Goulding", "In Love", "Love somebody - Maroon 5  https://www.youtube.com/watch?v=MU8B4XDI3Uw"),
     Song.new("Love Somebody", "Maroon 5", "In Love", " "),
-    Song.new("She Looks so Perfect", "5 Seconds of Summer", "In Love", " "),
-    Song.new("Steal My Girl", "One Direction", "In Love", " "),
-    Song.new("Story of My Life", "One Direction", "In Love", " "),
-    Song.new("Style", "Taylor Swift", "In Love", " "),
-    Song.new("Unconditionally", "Katy Perry", "In Love", " "),
-    Song.new("Waiting for Superman", "Daughtry", "In Love", " ") ]
+    Song.new("She Looks so Perfect", "5 Seconds of Summer", "In Love", "https://www.youtube.com/watch?v=X2BYmmTI04I"),
+    Song.new("Steal My Girl", "One Direction", "In Love", "https://www.youtube.com/watch?v=UpsKGvPjAgw"),
+    Song.new("Story of My Life", "One Direction", "In Love", "https://www.youtube.com/watch?v=W-TE_Ys4iwM"),
+    Song.new("Style", "Taylor Swift", "In Love", "https://www.youtube.com/watch?v=-CmadmM5cOk"),
+    Song.new("Unconditionally", "Katy Perry", "In Love", "https://www.youtube.com/watch?v=XjwZAa2EjKA"),
+    Song.new("Waiting for Superman", "Daughtry", "In Love", "https://www.youtube.com/watch?v=SXjXKT98es") ]
 
-    @jealous = [ Song.new("Jealous", "Nick Jonas", "Jealous", " "),
-    Song.new("Want You Back", "Cher/Demi Lavato", "Jealous", " "),
-    Song.new("More Than This", "One Direction", "Jealous", " "),
-    Song.new("True Colors", "Wiz Khalifa", "Jealous", " "),
-    Song.new("When I was your Man", "Bruno Mars", "Jealous", " ") ]
+    @jealous = [ Song.new("Jealous", "Nick Jonas", "Jealous", "https://www.youtube.com/watch?v=yw04QD1LaB0"),
+    Song.new("Want You Back", "Cher/Demi Lavato", "Jealous", "https://www.youtube.com/watch?v=LPgvNlrBfb0"),
+    Song.new("More Than This", "One Direction", "Jealous", "https://www.youtube.com/watch?v=b-RQIN3wo5U"),
+    Song.new("True Colors", "Wiz Khalifa", "Jealous", "https://www.youtube.com/watch?v=4W7XhJSPYvg"),
+    Song.new("When I was your Man", "Bruno Mars", "Jealous", "https://www.youtube.com/watch?v=ekzHIouo8Q4") ]
 
     @impulsive = [ Song.new("Lose Yourself", "Eminem", "Impulsive", " "),
     Song.new("Free Bird", "Lynyrd Skynyrd", "Impulsive", " ") ]
