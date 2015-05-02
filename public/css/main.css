@@ -31,3 +31,12 @@ h1 {
 .form-wrapper {
 	margin-left: 35%;
 }
+
+#video {
+	width: 60%;
+	height: 30em;
+}
+
+#videowrap {
+	text-align: center;
+}

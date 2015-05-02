@@ -8,8 +8,14 @@
 
 		<% song = @songs[rand(@songs.size - 1)] %>
 
-		<iframe src= "<%= song.youtube_link %>" >
-			<p><%= song.name %> by <%= song.artist %><p>
+		<div id="videowrap"> 
+		<button onclick="window.location.href='/'">CHANGE MOOD</button>
+		<form><input id="submit" type=button value="Refresh" onClick="window.location.reload()">
+		</form>
+
+		<p><%= song.name %> by <%= song.artist %><p>
+		<iframe id="video" src= "<%= song.youtube_link %>" >
 		</iframe>
+		</div>
 	</body>
 </html>
