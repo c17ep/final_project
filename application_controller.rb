@@ -105,7 +105,7 @@ class MyApp < Sinatra::Base
     Song.new("Carry On", "Olivia Holt", "Inspired/Motivated", "https://www.youtube.com/embed/ZysBzkqYA68"),
     Song.new("Chandelier", "Sia", "Inspired/Motivated", "https://www.youtube.com/embed/2vjPBrBU-TM"),
     Song.new("People Like Us", "Kelly Clarkson", "Inspired/Motivated", "https://www.youtube.com/embed/yWbMz_aBlMU"),
-    Song.new("Radioactive", "Imagine Dragons", "Inspired/Motivated", "Radioactive - Imagine Dragons", "https://www.youtube.com/embed/ktvTqknDobU"),
+    Song.new("Radioactive", "Imagine Dragons", "Inspired/Motivated", "https://www.youtube.com/embed/ktvTqknDobU"),
     Song.new("It's Time", "Imagine Dragons", "Inspired/Motivated", "https://www.youtube.com/embed/sENM2wA_FTg"),
     Song.new("Roar", "Katy Perry", "Inspired/Motivated", "https://www.youtube.com/embed/CevxZvSJLk8"),
     Song.new("Some Nights", "Fun", "Inspired/Motivated", "https://www.youtube.com/embed/qQkBeOisNM0"),
