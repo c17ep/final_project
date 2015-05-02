@@ -42,3 +42,9 @@ h1 {
 	text-align: center;
 
 }
+
+#names {
+	color: #5DA2E8;
+	font-family: 'Raleway', sans-serif;
+	font-size: 25px;
+}
