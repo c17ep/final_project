@@ -1,6 +1,6 @@
-#require 'bundler'
+require 'bundler'
 
-#Bundler.require
+Bundler.require
 
 require_relative "models/moods.rb"
 require_relative "models/song.rb"
@@ -197,45 +197,45 @@ class MyApp < Sinatra::Base
 
     @in_love = [ Song.new("Baby", "Justin Bieber", "In Love", "https://www.youtube.com/embed/kffacxfA7G4"),
     Song.new("Back For You", "One Direction", "In Love", "https://www.youtube.com/embed/j5oIz-8gDvs"),
-    Song.new("Banga! Banga!", "Austin Mahone", "In Love", "https://www.youtube.com/watch?v=Xovw9Qpl_jE"),
-    Song.new("Best I Ever Had", "Gavin Degraw", "In Love", "https://www.youtube.com/watch?v=NL2VBU604Jw"),
-    Song.new("C'mon C'mon", "Ome Direction", "In Lover", "https://www.youtube.com/watch?v=ZqQrN-XbzJA"),
-    Song.new("Love Me Harder", "Ariana Grande", "In Love", "https://www.youtube.com/watch?v=g5qU7p7yOY8"),
-    Song.new("Love Me like You Do", "Ellie Goulding", "In Love", "Love somebody - Maroon 5  https://www.youtube.com/watch?v=MU8B4XDI3Uw"),
+    Song.new("Banga! Banga!", "Austin Mahone", "In Love", "https://www.youtube.com/embed/Xovw9Qpl_jE"),
+    Song.new("Best I Ever Had", "Gavin Degraw", "In Love", "https://www.youtube.com/embed/NL2VBU604Jw"),
+    Song.new("C'mon C'mon", "Ome Direction", "In Lover", "https://www.youtube.com/embed/ZqQrN-XbzJA"),
+    Song.new("Love Me Harder", "Ariana Grande", "In Love", "https://www.youtube.com/embed/g5qU7p7yOY8"),
+    Song.new("Love Me like You Do", "Ellie Goulding", "In Love", "Love somebody - Maroon 5  https://www.youtube.com/embed/MU8B4XDI3Uw"),
     Song.new("Love Somebody", "Maroon 5", "In Love", " "),
-    Song.new("She Looks so Perfect", "5 Seconds of Summer", "In Love", "https://www.youtube.com/watch?v=X2BYmmTI04I"),
-    Song.new("Steal My Girl", "One Direction", "In Love", "https://www.youtube.com/watch?v=UpsKGvPjAgw"),
-    Song.new("Story of My Life", "One Direction", "In Love", "https://www.youtube.com/watch?v=W-TE_Ys4iwM"),
-    Song.new("Style", "Taylor Swift", "In Love", "https://www.youtube.com/watch?v=-CmadmM5cOk"),
-    Song.new("Unconditionally", "Katy Perry", "In Love", "https://www.youtube.com/watch?v=XjwZAa2EjKA"),
-    Song.new("Waiting for Superman", "Daughtry", "In Love", "https://www.youtube.com/watch?v=SXjXKT98es") ]
+    Song.new("She Looks so Perfect", "5 Seconds of Summer", "In Love", "https://www.youtube.com/embed/X2BYmmTI04I"),
+    Song.new("Steal My Girl", "One Direction", "In Love", "https://www.youtube.com/embed/UpsKGvPjAgw"),
+    Song.new("Story of My Life", "One Direction", "In Love", "https://www.youtube.com/embed/W-TE_Ys4iwM"),
+    Song.new("Style", "Taylor Swift", "In Love", "https://www.youtube.com/embed/-CmadmM5cOk"),
+    Song.new("Unconditionally", "Katy Perry", "In Love", "https://www.youtube.com/embed/XjwZAa2EjKA"),
+    Song.new("Waiting for Superman", "Daughtry", "In Love", "https://www.youtube.com/embed/SXjXKT98es") ]
 
-    @jealous = [ Song.new("Jealous", "Nick Jonas", "Jealous", "https://www.youtube.com/watch?v=yw04QD1LaB0"),
-    Song.new("Want You Back", "Cher/Demi Lavato", "Jealous", "https://www.youtube.com/watch?v=LPgvNlrBfb0"),
-    Song.new("More Than This", "One Direction", "Jealous", "https://www.youtube.com/watch?v=b-RQIN3wo5U"),
-    Song.new("True Colors", "Wiz Khalifa", "Jealous", "https://www.youtube.com/watch?v=4W7XhJSPYvg"),
-    Song.new("When I was your Man", "Bruno Mars", "Jealous", "https://www.youtube.com/watch?v=ekzHIouo8Q4") ]
+    @jealous = [ Song.new("Jealous", "Nick Jonas", "Jealous", "https://www.youtube.com/embed/yw04QD1LaB0"),
+    Song.new("Want You Back", "Cher/Demi Lavato", "Jealous", "https://www.youtube.com/embed/LPgvNlrBfb0"),
+    Song.new("More Than This", "One Direction", "Jealous", "https://www.youtube.com/embed/b-RQIN3wo5U"),
+    Song.new("True Colors", "Wiz Khalifa", "Jealous", "https://www.youtube.com/embed/4W7XhJSPYvg"),
+    Song.new("When I was your Man", "Bruno Mars", "Jealous", "https://www.youtube.com/embed/ekzHIouo8Q4") ]
 
-    @impulsive = [ Song.new("Lose Yourself", "Eminem", "Impulsive", " "),
-    Song.new("Free Bird", "Lynyrd Skynyrd", "Impulsive", " ") ]
+    @impulsive = [ Song.new("Lose Yourself", "Eminem", "Impulsive", "https://www.youtube.com/embed/bmXumtgwtak"),
+    Song.new("Free Bird", "Lynyrd Skynyrd", "Impulsive", "https://www.youtube.com/embed/QxIWDmmqZzY") ]
 
-    @sassy = [ Song.new("Fancy", "Iggy Azalea and Charli XCX", "Sassy", " "),
-    Song.new("Bad Girls", "M.I.A.", "Sassy", " "),
-    Song.new("Sleazy", "Kesha", "Sassy", " "),
-    Song.new("Partition", "Beyoncé", "Sassy", " "),
-    Song.new("Million Dollar Bills", "Lorde", "Sassy", " "),
-    Song.new("How to Be a Heartbreaker", "Marina & the Diamonds", "Sassy", " "),
-    Song.new("What I Like", "Charli XCX", " Sassy", " "),
-    Song.new("SMS (Bangerz)", "Miley Cyrus ft. Britney Spears", "Sassy", " ") ]
+    @sassy = [ Song.new("Bad Girls", "M.I.A.", "Sassy", "https://www.youtube.com/embed/2uYs0gJD-LE"),
+    Song.new("Sleazy", "Kesha", "Sassy", "https://www.youtube.com/embed/iLZZZhHipp4"),
+    Song.new("Partition", "Beyoncé", "Sassy", "https://www.youtube.com/embed/X2aWLkEmN-M"),
+    Song.new("Million Dollar Bills", "Lorde", "Sassy", "https://www.youtube.com/embed/UqmunwF4aN8"),
+    Song.new("How to Be a Heartbreaker", "Marina & the Diamonds", "Sassy", "https://www.youtube.com/embed/vKNcuTWzTVw"),
+    Song.new("What I Like", "Charli XCX", " Sassy", "https://www.youtube.com/embed/DsqNvy9v93s"),
+    Song.new("SMS (Bangerz)", "Miley Cyrus ft. Britney Spears", "Sassy", "https://www.youtube.com/embed/ZKc_LpeITd4"),
+    Song.new("Break the Rules", "Charli XCX", "Sassy", "https://www.youtube.com/embed/ABhDiXbUaBE") ]
 
-    @victorious = [ Song.new("The Distance", "Cake", "Victorious", " "),
-    Song.new("Eye of the Tiger", "Survivor", "Victorious", " "),
-    Song.new("U Can't Touch This", "MC Hammer", "Victorious", " "),
-    Song.new("Don't Stop Believing", "Journey", "Victorious", " "),
-    Song.new("We are the Champions", "Queen", "Victorious", " "),
-    Song.new("Lose Yourself", "Eminem", "Victorious", " "),
-    Song.new("Nothing's Gonna Stop us Now", "Starship", "Victorious", " "),
-    Song.new("Stronger", "Kayne West", "Victorious", " ") ]
+    @victorious = [ Song.new("The Distance", "Cake", "Victorious", "https://www.youtube.com/embed/cno20onK9dY"),
+    Song.new("Eye of the Tiger", "Survivor", "Victorious", "https://www.youtube.com/embed/btPJPFnesV4"),
+    Song.new("U Can't Touch This", "MC Hammer", "Victorious", "https://www.youtube.com/embed/otCpCn0l4Wo"),
+    Song.new("Don't Stop Believing", "Journey", "Victorious", "https://www.youtube.com/embed/VcjzHMhBtf0"),
+    Song.new("We are the Champions", "Queen", "Victorious", "https://www.youtube.com/embed/04854XqcfCY"),
+    Song.new("Lose Yourself", "Eminem", "Victorious", "https://www.youtube.com/embed/bmXumtgwtak"),
+    Song.new("Nothing's Gonna Stop us Now", "Starship", "Victorious", "https://www.youtube.com/embed/Sp1dfoTV_z4"),
+    Song.new("Stronger", "Kayne West", "Victorious", "https://www.youtube.com/embed/PsO6ZnUZI0g") ]
 
     if @mood == "heartbreak-depressing"
   		@songs = @heartbreak_depressing
