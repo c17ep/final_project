@@ -1,6 +1,6 @@
-require 'bundler'
+#require 'bundler'
 
-Bundler.require
+#Bundler.require
 
 require_relative "models/moods.rb"
 require_relative "models/song.rb"
@@ -19,33 +19,33 @@ class MyApp < Sinatra::Base
 
 
     @heartbreak_depressing = [
-    Song.new("Cry Me a River", "Justin Timerlake", "Heartbreak - Depressing", " "),
-    Song.new("It Will Rain","Bruno Mars", "Heartbreak - Depressing", " "),
-    Song.new("Somebody That I Used to Know", "Gotye feat. Kimbra", "Heartbreak - Depressing", " "),
-    Song.new("When You're Gone", "Avril Lavigne", "Heartbreak - Depressing", " "),
-    Song.new("Here Without You", "3 Doors Down", "Depressing - Heartbreak", " "),
-    Song.new("How Do I Live", "LeAnn Rimes", "Heartbreak - Depressing", " "),
-    Song.new("All too Well", "Taylor Swift", "Heartbreak - Depressing", " "),
-    Song.new("Already Gone", "Kelly Clarkson", "Heartbreak - Depressing", " "),
-    Song.new("Amnesia", "5 Seconds of Summer", "Heartbreak - Depressing", " "),
-    Song.new("Back to December", "Taylor Swift", "Heartbreak - Depressing", " "),
-    Song.new("Because of You", "Kelly Clarkson", "Heartbreak - Depressing", " "),
-    Song.new("Behind These Hazel Eyes", "Kelly Clarkson", "Heartbreak - Depressing", " "),
-    Song.new("Ain't No Sunshine", "Bill Withers", "Heartbreak - Depressing", " "),
-    Song.new("Stay With Me", "Sam Smith", "Heartbreak - Depressing", " "),
-    Song.new("The Heart Wants What it Wants", "Selena Gomez", "Heartbreak - Depressing", " "),
-    Song.new("Make You Feel My Love", "Adele", "Heartbreak - Depressing", " "),
-    Song.new("Say Something", "A Great Big World Feat. Christina Aguilera", "Heartbreak - Depressing", " ")]
+    Song.new("Cry Me a River", "Justin Timerlake", "Heartbreak - Depressing", "https://www.youtube.com/embed/DksSPZTZES0"),
+    Song.new("It Will Rain","Bruno Mars", "Heartbreak - Depressing", "https://www.youtube.com/embed/W-w3WfgpcGg"),
+    Song.new("Somebody That I Used to Know", "Gotye feat. Kimbra", "Heartbreak - Depressing", "https://www.youtube.com/embed/8UVNT4wvIGY"),
+    Song.new("When You're Gone", "Avril Lavigne", "Heartbreak - Depressing", "https://www.youtube.com/embed/0G3_kG5FFfQ"),
+    Song.new("Here Without You", "3 Doors Down", "Depressing - Heartbreak", "https://www.youtube.com/embed/kPBzTxZQG5Q"),
+    Song.new("How Do I Live", "LeAnn Rimes", "Heartbreak - Depressing", "https://www.youtube.com/embed/MUFasKZcH_c"),
+    Song.new("All too Well", "Taylor Swift", "Heartbreak - Depressing", "https://www.youtube.com/embed/XSEcrcxUs7M"),
+    Song.new("Already Gone", "Kelly Clarkson", "Heartbreak - Depressing", "https://www.youtube.com/embed/f0T3WAbU6tg"),
+    Song.new("Amnesia", "5 Seconds of Summer", "Heartbreak - Depressing", "https://www.youtube.com/embed/DCCJCILiX3o"),
+    Song.new("Back to December", "Taylor Swift", "Heartbreak - Depressing", "https://www.youtube.com/embed/QUwxKWT6m7U"),
+    Song.new("Because of You", "Kelly Clarkson", "Heartbreak - Depressing", "https://www.youtube.com/embed/Ra-Om7UMSJc"),
+    Song.new("Behind These Hazel Eyes", "Kelly Clarkson", "Heartbreak - Depressing", "https://www.youtube.com/embed/yipoOY56MbM"),
+    Song.new("Ain't No Sunshine", "Bill Withers", "Heartbreak - Depressing", "https://www.youtube.com/embed/tIdIqbv7SPo"),
+    Song.new("Stay With Me", "Sam Smith", "Heartbreak - Depressing", "https://www.youtube.com/embed/pB-5XG-DbAA"),
+    Song.new("The Heart Wants What it Wants", "Selena Gomez", "Heartbreak - Depressing", "https://www.youtube.com/embed/ij_0p_6qTss"),
+    Song.new("Make You Feel My Love", "Adele", "Heartbreak - Depressing", "https://www.youtube.com/embed/4k-W6cZ2CiY"),
+    Song.new("Say Something", "A Great Big World Feat. Christina Aguilera", "Heartbreak - Depressing", "https://www.youtube.com/embed/-2U0Ivkn2Ds")]
 
     @heartbreak_feel_good = [
-    Song.new("Heartbreak Song", "Kelly Clarkson", "Heartbreak - Feel Good", " "),
-    Song.new("Irreplaceable", "Beyonce", "Heartbreak - Feel Good", " "),
-    Song.new("F* You", "Cee-Lo Green", "Heartbreak - Feel Good", " "),
-    Song.new("So What", "Pink", "Heartbreak - Feel Good", " "),
-    Song.new("Single Ladies", "Beyonce", "Heartbreak - Feel Good", " "),
-    Song.new("We are never getting back together", "Taylor Swift", "Heartbreak - Feel Good", " "),
-    Song.new("Stronger (What Doesn’t Kill You)", "Kelly Clarkson", "Heartbreak - Feel Good", " "),
-    Song.new("Best Thing I never Had", "Beyonce", "Heartbreak - Feel Good", " "),
+    Song.new("Heartbreak Song", "Kelly Clarkson", "Heartbreak - Feel Good", "https://www.youtube.com/embed/d4_6N-k5VS4"),
+    Song.new("Irreplaceable", "Beyonce", "Heartbreak - Feel Good", "https://www.youtube.com/embed/2EwViQxSJJQ"),
+    Song.new("F* You", "Cee-Lo Green", "Heartbreak - Feel Good", "https://www.youtube.com/embed/K71XXSin4lc"),
+    Song.new("So What", "Pink", "Heartbreak - Feel Good", "https://www.youtube.com/embed/FJfFZqTlWrQ"),
+    Song.new("Single Ladies", "Beyonce", "Heartbreak - Feel Good", "https://www.youtube.com/embed/4m1EFMoRFvY"),
+    Song.new("We are never getting back together", "Taylor Swift", "Heartbreak - Feel Good", "https://www.youtube.com/embed/WA4iX5D9Z64"),
+    Song.new("Stronger (What Doesn’t Kill You)", "Kelly Clarkson", "Heartbreak - Feel Good", "https://www.youtube.com/embed/Xn676-fLq7I"),
+    Song.new("Best Thing I never Had", "Beyonce", "Heartbreak - Feel Good", "https://www.youtube.com/embed/FHp2KgyQUFk"),
     Song.new("Problem", "Ariana Grande", "Heartbreak - Feel Good", " "),
     Song.new("My Life Would Suck Without You", "Kelly Clarkson", "Heartbreak - Feel Good", " "),
     Song.new("The one that got away", "Kelly Clarkson", "Heartbreak - Feel Good", " "),
@@ -177,12 +177,11 @@ class MyApp < Sinatra::Base
     Song.new("Realize", "Colbie Caillat", "Sorry/Apologetic", " "),
     Song.new("Umbrella", "Rihanna and Marie Digby", "Sorry/Apologetic", " ") ]
 
-    @angry = [ Song.new("I Hate Everything About You", "Three Days Grace", "Angry", " "),
-    Song.new("Platypus", "Green Day", "Angry", " "),
-    Song.new("The Way I Am", "Eminem", "Angry", " "),
-    Song.new("Breakin’ dishes", "Rihanna", "Angry", " "),
-    Song.new("Gives You Hell", "The All-American Rejects", "Angry", " "),
-    Song.new("Love Sosa", "Chief Keef", "Angry", " ") ]
+    @angry = [ Song.new("I Hate Everything About You", "Three Days Grace", "Angry", "https://www.youtube.com/embed/d8ekz_CSBVg"),
+    Song.new("Platypus", "Green Day", "Angry", "https://www.youtube.com/embed/7RLDZaWN8b4"),
+    Song.new("The Way I Am", "Eminem", "Angry", "https://www.youtube.com/embed/mQvteoFiMlg"),
+    Song.new("Breakin’ dishes", "Rihanna", "Angry", "https://www.youtube.com/embed/v0YrTizC3JU"),
+    Song.new("Gives You Hell", "The All-American Rejects", "Angry", "https://www.youtube.com/embed/uxUATkpMQ8A") ]
 
     @conflicted = [ Song.new("Bohemian Rhapsody", "Queen", "Conflicted", " "),
     Song.new("Habits (Stay High) [Hippie Sabotage Remix]", "To Love", "Conflicted", " "),

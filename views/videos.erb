@@ -8,9 +8,8 @@
 
 		<% song = @songs[rand(@songs.size - 1)] %>
 
-		<video controls>
-			<source src= "<% song.youtube_link %>" >
+		<iframe src= "<%= song.youtube_link %>" >
 			<p><%= song.name %> by <%= song.artist %><p>
-		</video>
+		</iframe>
 	</body>
 </html>
